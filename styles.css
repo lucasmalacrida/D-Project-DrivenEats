@@ -64,7 +64,7 @@ h3 {
 
 /* ----- Divs ------------------------------ */
 body {
-    background-color: white;
+    background-color: #E5E5E5;
 }
 
 .bigger-header {
@@ -87,7 +87,7 @@ header {
 }
 
 main {
-    background-color: #E5E5E5;
+    background-color: #EEEEEE;
     width: 414px;
 
     margin-top: 92px;
