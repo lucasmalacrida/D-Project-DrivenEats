@@ -210,7 +210,6 @@ footer {
 .confirm-order {
     background-color: #50D074;
     width: 377px;
-    height: 353px;
     margin-left: auto;
     margin-right: auto;
 
@@ -279,6 +278,7 @@ footer {
     border-radius: 26px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2px;
 
     text-align: center;
     font-weight: 700;

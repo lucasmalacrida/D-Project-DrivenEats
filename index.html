@@ -106,7 +106,7 @@
 
     <div class="bigger-footer">
       <footer>
-        <button class="send-order" disabled onclick="sendOrder()">
+        <button class="send-order" disabled onclick="confirmOrder()">
           Selecione os 3 itens<br>para fechar o pedido
         </button>
       </footer>
@@ -117,29 +117,29 @@
         <div class="confirm-order">
           <p>Confirme seu pedido</p>
           <div class="selected-dish">
-            <p>Frango Yin Yang</p>
-            <p>14,90</p>
+            <p>Dish</p>
+            <p>0,00</p>
           </div>
 
           <div class="selected-drink">
-            <p>Coquinha gelada</p>
-            <p>4,90</p>
+            <p>Drink</p>
+            <p>0,00</p>
           </div>
 
           <div class="selected-dessert">
-            <p>Pudim</p>
-            <p>7,90</p>
+            <p>Dessert</p>
+            <p>0,00</p>
           </div>
 
           <div class="total">
             <p>TOTAL</p>
-            <p>R$ <span>27,70</span></p>
+            <p>R$ <span>0,00</span></p>
           </div>
 
-          <button class="finish-order">
+          <button class="finish-order" onclick="finishOrder()">
             Tudo certo, pode pedir!
           </button>
-          <button class="cancel-order">
+          <button class="cancel-order" onclick="cancelOrder()">
             Cancelar
           </button>
         </div>
