@@ -24,81 +24,81 @@
     <main>
       <h2>Primeiro, seu prato</h2>
         <div class="dishes">
-          <div class="card">
+          <div class="card" onclick="selectDish(this); verifyOrder()">
             <img src="./media/frango.png">
             <h3>Frango Yin Yang</h3>
             <p>Um pouco de batata, um pouco de salada</p>
-            <p class="price">R$ 14,90</p>
+            <p class="price">R$ <span>14,90</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
 
-          <div class="card">
+          <div class="card" onclick="selectDish(this); verifyOrder()">
             <img src="./media/frango.png">
             <h3>Frango Yin Yang</h3>
             <p>Um pouco de batata, um pouco de salada</p>
-            <p class="price">R$ 14,90</p>
+            <p class="price">R$ <span>14,90</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
 
-          <div class="card">
+          <div class="card" onclick="selectDish(this); verifyOrder()">
             <img src="./media/frango.png">
             <h3>Frango Yin Yang</h3>
             <p>Um pouco de batata, um pouco de salada</p>
-            <p class="price">R$ 14,90</p>
+            <p class="price">R$ <span>14,90</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
         </div>
 
       <h2>Agora, sua bebida</h2>
         <div class="drinks">
-          <div class="card">
+          <div class="card" onclick="selectDrink(this); verifyOrder()">
             <img src="./media/coca.png">
             <h3>Coquinha gelada</h3>
             <p>Lata 350ml</p>
-            <p class="price">R$ 4,90</p>
+            <p class="price">R$ <span>4,90</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
           
-          <div class="card">
+          <div class="card" onclick="selectDrink(this); verifyOrder()">
             <img src="./media/coca.png">
             <h3>Coquinha gelada</h3>
             <p>Lata 350ml</p>
-            <p class="price">R$ 4,90</p>
+            <p class="price">R$ <span>4,90</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
 
-          <div class="card">
+          <div class="card" onclick="selectDrink(this); verifyOrder()">
             <img src="./media/coca.png">
             <h3>Coquinha gelada</h3>
             <p>Lata 350ml</p>
-            <p class="price">R$ 4,90</p>
+            <p class="price">R$ <span>4,90</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
         </div>
 
       <h2>Por fim, sua sobremesa</h2>
         <div class="desserts">
-          <div class="card">
+          <div class="card" onclick="selectDessert(this); verifyOrder()">
             <img src="./media/pudim.png">
             <h3>Pudim</h3>
             <p>Apenas pudim</p>
-            <p class="price">R$ 7,90</p>
+            <p class="price">R$ <span>7,90</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
 
-          <div class="card">
+          <div class="card" onclick="selectDessert(this); verifyOrder()">
             <img src="./media/pudim.png">
             <h3>Pudim</h3>
             <p>Apenas pudim</p>
-            <p class="price">R$ 7,90</p>
+            <p class="price">R$ <span>7,90</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
 
-          <div class="card">
+          <div class="card" onclick="selectDessert(this); verifyOrder()">
             <img src="./media/pudim.png">
             <h3>Pudim</h3>
             <p>Apenas pudim</p>
-            <p class="price">R$ 7,90</p>
+            <p class="price">R$ <span>7,90</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
         </div>
@@ -106,7 +106,7 @@
 
     <div class="bigger-footer">
       <footer>
-        <button class="send-order">
+        <button class="send-order" disabled onclick="sendOrder()">
           <p>Selecione os 3 itens<br>para fechar o pedido</p>
         </button>
       </footer>

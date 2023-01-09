@@ -49,4 +49,9 @@ table {
 
 button {
     all: unset;
+	cursor: pointer;
+}
+
+button:disabled {
+	cursor: inherit;
 }
