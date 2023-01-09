@@ -24,81 +24,81 @@
     <main>
       <h2>Primeiro, seu prato</h2>
         <div class="dishes">
-          <div class="card" onclick="selectDish(this); verifyOrder()">
+          <div class="card" onclick="selectDish(this); verifyOrder()" data-test="dish">
             <img src="./media/pics/frango.png">
-            <h3>Frango Yin Yang</h3>
+            <h3 data-test="item-name">Frango Yin Yang</h3>
             <p>Um pouco de batata, um pouco de salada</p>
-            <p class="price">R$ <span>14,90</span></p>
+            <p class="price" data-test="item-price">R$ <span>14,90</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
 
-          <div class="card" onclick="selectDish(this); verifyOrder()">
+          <div class="card" onclick="selectDish(this); verifyOrder()" data-test="dish">
             <img src="./media/pics/frango.png">
-            <h3>Frango Yin Yang</h3>
+            <h3 data-test="item-name">Frango Yin Yang</h3>
             <p>Um pouco de batata, um pouco de salada</p>
-            <p class="price">R$ <span>14,90</span></p>
+            <p class="price" data-test="item-price">R$ <span>14,90</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
 
-          <div class="card" onclick="selectDish(this); verifyOrder()">
+          <div class="card" onclick="selectDish(this); verifyOrder()" data-test="dish">
             <img src="./media/pics/frango.png">
-            <h3>Frango Yin Yang</h3>
+            <h3 data-test="item-name">Frango Yin Yang</h3>
             <p>Um pouco de batata, um pouco de salada</p>
-            <p class="price">R$ <span>14,90</span></p>
+            <p class="price" data-test="item-price">R$ <span>14,90</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
         </div>
 
       <h2>Agora, sua bebida</h2>
         <div class="drinks">
-          <div class="card" onclick="selectDrink(this); verifyOrder()">
+          <div class="card" onclick="selectDrink(this); verifyOrder()" data-test="drink">
             <img src="./media/pics/coca.png">
-            <h3>Coquinha gelada</h3>
+            <h3 data-test="item-name">Coquinha gelada</h3>
             <p>Lata 350ml</p>
-            <p class="price">R$ <span>4,90</span></p>
+            <p class="price" data-test="item-price">R$ <span>4,90</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
           
-          <div class="card" onclick="selectDrink(this); verifyOrder()">
+          <div class="card" onclick="selectDrink(this); verifyOrder()" data-test="drink">
             <img src="./media/pics/coca.png">
-            <h3>Coquinha gelada</h3>
+            <h3 data-test="item-name">Coquinha gelada</h3>
             <p>Lata 350ml</p>
-            <p class="price">R$ <span>4,90</span></p>
+            <p class="price" data-test="item-price">R$ <span>4,90</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
 
-          <div class="card" onclick="selectDrink(this); verifyOrder()">
+          <div class="card" onclick="selectDrink(this); verifyOrder()" data-test="drink">
             <img src="./media/pics/coca.png">
-            <h3>Coquinha gelada</h3>
+            <h3 data-test="item-name">Coquinha gelada</h3>
             <p>Lata 350ml</p>
-            <p class="price">R$ <span>4,90</span></p>
+            <p class="price" data-test="item-price">R$ <span>4,90</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
         </div>
 
       <h2>Por fim, sua sobremesa</h2>
         <div class="desserts">
-          <div class="card" onclick="selectDessert(this); verifyOrder()">
+          <div class="card" onclick="selectDessert(this); verifyOrder()" data-test="dessert">
             <img src="./media/pics/pudim.png">
-            <h3>Pudim</h3>
+            <h3 data-test="item-name">Pudim</h3>
             <p>Apenas pudim</p>
-            <p class="price">R$ <span>7,90</span></p>
+            <p class="price" data-test="item-price">R$ <span>7,90</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
 
-          <div class="card" onclick="selectDessert(this); verifyOrder()">
+          <div class="card" onclick="selectDessert(this); verifyOrder()" data-test="dessert">
             <img src="./media/pics/pudim.png">
-            <h3>Pudim</h3>
+            <h3 data-test="item-name">Pudim</h3>
             <p>Apenas pudim</p>
-            <p class="price">R$ <span>7,90</span></p>
+            <p class="price" data-test="item-price">R$ <span>7,90</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
 
-          <div class="card" onclick="selectDessert(this); verifyOrder()">
+          <div class="card" onclick="selectDessert(this); verifyOrder()" data-test="dessert">
             <img src="./media/pics/pudim.png">
-            <h3>Pudim</h3>
+            <h3 data-test="item-name">Pudim</h3>
             <p>Apenas pudim</p>
-            <p class="price">R$ <span>7,90</span></p>
+            <p class="price" data-test="item-price">R$ <span>7,90</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
         </div>
@@ -106,7 +106,7 @@
 
     <div class="bigger-footer">
       <footer>
-        <button class="send-order" disabled onclick="confirmOrder()">
+        <button class="send-order" disabled onclick="confirmOrder()" data-test="order-btn">
           Selecione os 3 itens<br>para fechar o pedido
         </button>
       </footer>
@@ -114,7 +114,7 @@
     
     <div class="bigger-container-confirm-order hidden">
       <div class="container-confirm-order">
-        <div class="confirm-order">
+        <div class="confirm-order" data-test="confirm-order-modal">
           <p>Confirme seu pedido</p>
           <div class="selected-dish">
             <p>Dish</p>
@@ -136,10 +136,10 @@
             <p>R$ <span>0,00</span></p>
           </div>
 
-          <button class="finish-order" onclick="finishOrder()">
+          <button class="finish-order" onclick="finishOrder()" data-test="confirm-order-btn">
             Tudo certo, pode pedir!
           </button>
-          <button class="cancel-order" onclick="cancelOrder()">
+          <button class="cancel-order" onclick="cancelOrder()" data-test="cancel-order-btn">
             Cancelar
           </button>
         </div>
