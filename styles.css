@@ -33,6 +33,12 @@ h2 {
     margin-left: 19px;
 }
 
+img {
+    width: 144px;
+    height: 87px;
+    border-radius: 7px;
+}
+
 h3 {
     color: #333333;
     font-family: "Roboto";
