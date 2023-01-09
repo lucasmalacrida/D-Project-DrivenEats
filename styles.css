@@ -190,6 +190,100 @@ footer {
     font-weight: 700;
 }
 
+.bigger-container-confirm-order {
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.container-confirm-order {
+    background-color: rgb(255, 255, 255, 0.9);
+    width: 414px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: calc((100vh - 353px)/2);
+}
+
+.confirm-order {
+    background-color: #50D074;
+    width: 377px;
+    height: 353px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 9px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+    
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 1.8%;
+}
+
+.confirm-order > p:first-of-type {
+    text-align: center;
+    padding-top: 21px;
+    padding-bottom: 28px;
+    font-weight: 700;
+    letter-spacing: inherit;
+}
+
+.selected-dish {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px 13px 26px;
+}
+
+.selected-drink {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px 13px 26px;
+}
+
+.selected-dessert {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px 13px 26px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px 24px 26px;
+    font-weight: 700;
+}
+
+.finish-order {
+    background-color: #ffffff;
+    display: block;
+    width: 333px;
+    height: 52px;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #50D074;
+    text-align: center;
+    font-weight: 700;
+}
+
+.cancel-order {
+    display: block;
+    width: 333px;
+    height: 52px;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+}
 
 @media (max-width: 480px) {
     .dishes {

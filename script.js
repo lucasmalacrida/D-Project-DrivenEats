@@ -60,7 +60,7 @@ function verifyOrder(){
         const buttonSend = document.querySelector(".send-order");
         buttonSend.classList.add("order-done");
         buttonSend.disabled = false;
-        document.querySelector(".send-order p").innerHTML = "Fechar pedido";
+        buttonSend.innerHTML = "Fechar pedido";
     }
 }
 
