@@ -1,7 +1,7 @@
 /* ----- Fonts ------------------------------ */
 h1 {
     color: #ffffff;
-    font-family: "Righteous";
+    font-family: "Righteous", "Cursive";
     font-weight: 400;
     font-size: 44px;
     line-height: 55px;
@@ -14,7 +14,7 @@ h1 {
 
 header p {
     color: #ffffff;
-    font-family: "Roboto";
+    font-family: "Roboto", "Sans-serif";
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -26,7 +26,7 @@ header p {
 
 h2 {
     color: #333333;
-    font-family: "Righteous";
+    font-family: "Righteous", "Cursive";
     font-weight: 400;
     font-size: 26px;
     letter-spacing: 1.8%;
@@ -41,7 +41,7 @@ img {
 
 h3 {
     color: #333333;
-    font-family: "Roboto";
+    font-family: "Roboto", "Sans-serif";
     font-weight: 700;
     font-size: 16px;
     
@@ -50,7 +50,7 @@ h3 {
 
 .card p:first-of-type {
     color: #A6A6A6;
-    font-family: "Roboto";
+    font-family: "Roboto", "Sans-serif";
     font-weight: 300;
     font-size: 15px;
     line-height: 18px;
@@ -60,7 +60,7 @@ h3 {
 
 .price {
     color: #000000;
-    font-family: "Roboto";
+    font-family: "Roboto", "Sans-serif";
     font-weight: 400;
     font-size: 16px;
 
@@ -185,7 +185,7 @@ footer {
 
     text-align: center;
     color: #ffffff;
-    font-family: "Roboto";
+    font-family: "Roboto", "Sans-serif";
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
@@ -223,7 +223,7 @@ footer {
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
     
     color: #ffffff;
-    font-family: "Roboto";
+    font-family: "Roboto", "Sans-serif";
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
