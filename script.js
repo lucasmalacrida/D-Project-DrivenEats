@@ -113,18 +113,32 @@ function confirmOrder(){
 }
 
 function finishOrder(){
-    let clientName = prompt("Digite seu nome:");
-    let clientAdress = prompt("Digite seu endereço:");
+    let clientName;
+    do {
+        clientName = prompt("Digite seu nome:");
+        if (clientName === null){
+            return;
+        }
+    } while (clientName === '');
+    
+    let clientAdress;
+    do {
+        clientAdress = prompt("Digite seu endereço:");
+        if (clientAdress === null){
+            return;
+        }
+    } while (clientAdress === '');
 
     const phoneNumber = "5567991072525";
-    const text = `Olá, gostaria de fazer o pedido:
-    - Prato: ${dish}
-    - Bebida: ${drink}
-    - Sobremesa: ${dessert}
-    Total: R$ ${priceTotal}
+    const text = 
+`Olá, gostaria de fazer o pedido:
+- Prato: ${dish}
+- Bebida: ${drink}
+- Sobremesa: ${dessert}
+Total: R$ ${priceTotal}
     
-    Nome: ${clientName}
-    Endereço: ${clientAdress}`;
+Nome: ${clientName}
+Endereço: ${clientAdress}`;
 
     const link = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
     window.open(link, '_blank');
