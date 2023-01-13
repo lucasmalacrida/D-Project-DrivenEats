@@ -47,6 +47,14 @@
             <p class="price" data-test="item-price">R$ <span>99,90</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
+
+          <div class="card none" onclick="selectDish(this); verifyOrder()" data-test="dish">
+            <img alt="Nenhum" src="./media/circle-close.png">
+            <h3 data-test="item-name">Nenhuma Opção</h3>
+            <p>Não quero prato</p>
+            <p class="price" data-test="item-price">R$ <span>0,00</span></p>
+            <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+          </div>
         </div>
 
       <h2>Agora, sua bebida</h2>
@@ -82,6 +90,14 @@
             <p class="price" data-test="item-price">R$ <span>2,90</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
+
+          <div class="card none" onclick="selectDrink(this); verifyOrder()" data-test="drink">
+            <img alt="Nenhum" src="./media/circle-close.png">
+            <h3 data-test="item-name">Nenhuma Opção</h3>
+            <p>Não quero bebida</p>
+            <p class="price" data-test="item-price">R$ <span>0,00</span></p>
+            <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+          </div>
         </div>
 
       <h2>Por fim, sua sobremesa</h2>
@@ -107,6 +123,14 @@
             <h3 data-test="item-name">Petit Gateau</h3>
             <p>1 porção</p>
             <p class="price" data-test="item-price">R$ <span>14,90</span></p>
+            <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
+          </div>
+
+          <div class="card none" onclick="selectDessert(this); verifyOrder()" data-test="dessert">
+            <img alt="Nenhum" src="./media/circle-close.png">
+            <h3 data-test="item-name">Nenhuma Opção</h3>
+            <p>Não quero doce</p>
+            <p class="price" data-test="item-price">R$ <span>0,00</span></p>
             <ion-icon name="checkmark-circle" class="hidden"></ion-icon>
           </div>
         </div>

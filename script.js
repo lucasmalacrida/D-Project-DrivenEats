@@ -61,8 +61,13 @@ function selectDessert(card){
 }
 
 function verifyOrder(){
-    if (dish !== undefined && drink !== undefined && dessert !== undefined){
-        const buttonSend = document.querySelector(".send-order");
+    const buttonSend = document.querySelector(".send-order");
+
+    if (dish === "Nenhuma Opção" && drink === "Nenhuma Opção" && dessert === "Nenhuma Opção"){
+        buttonSend.classList.remove("order-done");
+        buttonSend.disabled = true;
+        buttonSend.innerHTML = "Selecione os 3 itens <br>para fechar o pedido";
+    } else if (dish !== undefined && drink !== undefined && dessert !== undefined){
         buttonSend.classList.add("order-done");
         buttonSend.disabled = false;
         buttonSend.innerHTML = "Fechar pedido";
@@ -70,17 +75,37 @@ function verifyOrder(){
 }
 
 const finalScreen = document.querySelector(".bigger-container-confirm-order");
+let selectedDish;
+let selectedDrink;
+let selectedDessert;
 let total;
 let priceTotal;
 function confirmOrder(){
     finalScreen.classList.remove("hidden");
 
-    document.querySelector(".selected-dish p:nth-of-type(1)").innerHTML = dish;
-    document.querySelector(".selected-dish p:nth-of-type(2)").innerHTML = priceDish;
-    document.querySelector(".selected-drink p:nth-of-type(1)").innerHTML = drink;
-    document.querySelector(".selected-drink p:nth-of-type(2)").innerHTML = priceDrink;
-    document.querySelector(".selected-dessert p:nth-of-type(1)").innerHTML = dessert;
-    document.querySelector(".selected-dessert p:nth-of-type(2)").innerHTML = priceDessert;
+    selectedDish = document.querySelector(".selected-dish");
+    if (dish === "Nenhuma Opção"){
+        selectedDish.classList.add("hidden");
+    } else {
+        selectedDish.classList.remove("hidden");
+        selectedDish.innerHTML = `<p>${dish}</p><p>${priceDish}</p>`;
+    }
+
+    selectedDrink = document.querySelector(".selected-drink");
+    if (drink === "Nenhuma Opção"){
+        selectedDrink.classList.add("hidden");
+    } else {
+        selectedDrink.classList.remove("hidden");
+        selectedDrink.innerHTML = `<p>${drink}</p><p>${priceDrink}</p>`;
+    }
+
+    selectedDessert = document.querySelector(".selected-dessert");
+    if (dessert === "Nenhuma Opção"){
+        selectedDessert.classList.add("hidden");
+    } else {
+        selectedDessert.classList.remove("hidden");
+        selectedDessert.innerHTML = `<p>${dessert}</p><p>${priceDessert}</p>`;
+    }
 
     total = (toNumber(priceDish) + toNumber(priceDrink) + toNumber(priceDessert));
     priceTotal = toPrice(total);
